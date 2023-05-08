@@ -7,6 +7,7 @@
 call plug#begin()
   Plug 'preservim/nerdtree'
   Plug 'airblade/vim-gitgutter'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   Plug 'chriskempson/base16-vim'
   Plug 'vim-airline/vim-airline'
