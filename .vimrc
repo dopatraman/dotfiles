@@ -7,13 +7,15 @@
 call plug#begin()
   Plug 'preservim/nerdtree'
   Plug 'airblade/vim-gitgutter'
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
-  Plug 'chriskempson/base16-vim'
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'sheerun/vim-polyglot'
   Plug 'ayu-theme/ayu-vim'
+  Plug 'dracula/vim'
+  Plug 'sainnhe/gruvbox-material'
+  Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " Indentation
@@ -48,15 +50,14 @@ set cursorline
 " Colorscheme
 let g:airline_theme='minimalist'
 
-set t_Co=256
 set termguicolors
-syntax on
-set background=dark
-colorscheme ayu
+syntax enable
 let ayucolor="dark"
+colorscheme gruvbox-material
 
 " Mappings
 let mapleader=","
 nmap <Leader>n :NERDTree
 nmap <Leader>nf :NERDTreeFind
+nmap <Leader>p :Files
 
