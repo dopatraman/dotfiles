@@ -1,4 +1,11 @@
+" =================================
+" Vim Config
+" ----------
+" =================================
+
+
 call plug#begin()
+  Plug 'preservim/nerdtree'
   Plug 'airblade/vim-gitgutter'
   Plug 'junegunn/fzf.vim'
   Plug 'chriskempson/base16-vim'
