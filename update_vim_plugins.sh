@@ -2,5 +2,5 @@
 
 set -e
 
-vim +PlugInstall +qall
+vim +PlugInstall
 
