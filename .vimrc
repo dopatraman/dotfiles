@@ -16,6 +16,15 @@ call plug#begin()
   Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
+" Indentation
+set tabstop=2
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype typescript setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype jade setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype elixir setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype coffee setlocal ts=2 sw=2 sts=2 expandtab
+autocmd Filetype ruby setlocal ts=2 sw=2 sts=2 expandtab
+
 
 " Set line numbers
 set number
@@ -31,7 +40,7 @@ set incsearch
 set ignorecase
 
 " FZF
-" set rtp+=/usr/local/opt/fzf
+set rtp+=/usr/local/opt/fzf
 
 "Cursor settings:
 set cursorline
